@@ -85,10 +85,6 @@ export default function Home() {
         </p>
       </div>
 
-      {/**
-       * Framer motion div that moves a bunch of white stars around the screen
-       * when the mouse moves over the parent div.
-       */}
       <motion.div
         className="fixed z-50 top-0 left-0 w-screen h-screen"
         onMouseMove={(e) => {
@@ -117,7 +113,6 @@ export default function Home() {
             (child as HTMLElement).style.transform = "translate(0, 0)";
           }
         }}
-        // make the parent div interactive
         whileHover={{ scale: 1.1 }}
         animate={{ scale: 1 }}
       >
